@@ -1,9 +1,9 @@
 <template>
   <div>
+    <img src="https://cn.vuejs.org/images/logo.png" style="width:150px">
     <h1>Welcome to Your Vue.js App</h1>
     <button @click="fullscreen()">全屏截图</button>
     <button @click="startScreenshot()">开始截图</button>
-    <div>预览区域</div>
     <div class="view_box">
       <img :src="imgUrl"/>
     </div>
@@ -51,10 +51,14 @@ button {
   margin: 10px;
 }
 .view_box {
-  border: 1px solid #ccc;
-  min-height: 200px;
+  border: 1px solid #ecebeb;
+  background-color: #fafafa;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 20px;
 }
 .view_box img {
-  max-width: 90%;
+  max-width: 100%;
 }
 </style>
